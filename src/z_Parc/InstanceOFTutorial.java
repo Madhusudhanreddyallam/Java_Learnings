@@ -10,10 +10,10 @@ class Hacker{}
 
 public class InstanceOFTutorial{
 	
-   static String count(ArrayList mylist){
+   static String count(ArrayList mylist1){
       int a = 0,b = 0,c = 0;
-      for(int i = 0; i < mylist.size(); i++){
-         Object element=mylist.get(i);
+      for(int i = 0; i < mylist1.size(); i++){
+         Object element=mylist1.get(i);
          if(element.equals("Student"))
             a++;
          if(element.equals("Rockstar"))
