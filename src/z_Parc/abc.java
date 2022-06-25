@@ -20,20 +20,18 @@ public  class abc
 
 
 
-<<<<<<< HEAD
+
 	public static void mad3()
 	{
 		
 	}
 
-	public static void mad4()
+	public static void mad6()
 	{
 		
 	}
 
 
-=======
->>>>>>> 6e734d062eeb4451a9e66eb1c4f6836c64d474d0
 
 
 }
