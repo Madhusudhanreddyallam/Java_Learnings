@@ -12,10 +12,18 @@ public  class abc
 	{
 		
 	}
+
 	public static void mad2()
 	{
 		
 	}
+
+	public static void mad1()
+	{
+		
+	}
+
+
 
 }
 
