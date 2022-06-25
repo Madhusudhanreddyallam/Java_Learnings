@@ -18,10 +18,7 @@ public  class abc
 		
 	}
 
-	public static void mad1()
-	{
-		
-	}
+
 
 
 
