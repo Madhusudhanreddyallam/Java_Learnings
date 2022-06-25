@@ -36,6 +36,11 @@ public  class abc
 	{
 		
 	}
+	
+	public static void mad7()
+	{
+		
+	}
 
 }
 
