@@ -18,10 +18,14 @@ public  class abc
 		
 	}
 
+	public static void mad3()
+	{
+	System.out.println("rem_madhu");		
+	}
 
 	public static void mad4()
 	{
-			
+	System.out.println("rem_madhu");		
 	}
 
 
