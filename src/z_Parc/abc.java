@@ -19,7 +19,10 @@ public  class abc
 	}
 
 
-
+	public static void mad3()
+	{
+		
+	}
 
 
 }
