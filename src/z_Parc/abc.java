@@ -19,7 +19,7 @@ public  class abc
 	}
 
 
-	public static void mad3()
+	public static void mad5()
 	{
 		
 	}
