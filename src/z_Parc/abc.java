@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 
 public  class abc
 {
-	int i ;  
+	int i ;  int b;
 
 }
 

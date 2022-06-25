@@ -8,7 +8,7 @@ public final class string {
 		String s2=" "; 
 		System.out.println(s1.equals(s2));  
 		s2="java"+ " ";
-		 s2+="string"; 
+		s2+="string"; 
 		System.out.println(s1 == s2);    
 
 	}
