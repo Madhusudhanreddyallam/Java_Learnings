@@ -20,6 +20,7 @@ public  class abc
 
 
 
+<<<<<<< HEAD
 	public static void mad3()
 	{
 		
@@ -31,6 +32,8 @@ public  class abc
 	}
 
 
+=======
+>>>>>>> 6e734d062eeb4451a9e66eb1c4f6836c64d474d0
 
 
 }
