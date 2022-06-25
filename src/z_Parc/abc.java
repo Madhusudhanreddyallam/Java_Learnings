@@ -34,13 +34,9 @@ public  class abc
 
 	public static void mad5()
 	{
-		
+		System.out.println("rem_madhu");
 	}
-	
-	public static void mad7()
-	{
-		
-	}
+
 
 }
 
