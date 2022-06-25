@@ -25,7 +25,7 @@ public  class abc
 		
 	}
 
-	public static void mad1()
+	public static void mad4()
 	{
 		
 	}
