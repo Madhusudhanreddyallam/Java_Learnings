@@ -27,14 +27,14 @@ public  class abc
 	{
 
 	System.out.println("working copy");
-	System.out.println("rem_madhu");		
+			
 
 	}
 
 
 	public static void mad5()
 	{
-		System.out.println("rem_madhu");
+            System.out.println("rem_madhu");
 	}
 
 
