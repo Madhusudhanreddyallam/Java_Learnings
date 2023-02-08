@@ -1,28 +1,41 @@
 package Algo;
 
 public class insert_N_get_maxNum {
-	
-	public static void main(String args[])
+
+
+	public static void main (String args[]) 
 	{
-		int N = 903, K = 5 , rem , max_num = 0;
-		
-		while(N!=0)
-		{
-			rem = N % 10;
-			if(rem > K)
-			{
-				max_num = max_num * 10 + rem;
-				N=N/10;
-			}
-			else
-			{
-				max_num = Integer.parseInt(String.valueOf(max_num)+String.valueOf(K)+String.valueOf(N));
-				break;
-			}
-				
-		}
-		
-		System.out.println(max_num);
+		int N = 6673, K = 6;
+		maximizeNumber(N, K);
 	}
+
+	public static void maximizeNumber(int N, int K)
+	{
+
+		String s = Integer.toString(N);
+		int L = s.length();
+
+
+		String result = "";
+		int i = 0;
+
+
+		while ((i < L) && (K <= ((int)s.charAt(i) - (int)'0'))) 
+		{
+			result += (s.charAt(i));
+			++i;
+		}
+
+		result += ((char)(K + (int)'0'));
+
+		while (i < L) 
+		{
+			result += (s.charAt(i));
+			++i;
+		}
+
+		System.out.println(result);
+	}
+
 
 }

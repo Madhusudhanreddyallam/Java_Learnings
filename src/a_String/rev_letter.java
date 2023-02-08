@@ -15,6 +15,12 @@ public class rev_letter {
 		}
 		System.out.println(temp);
 		
+		//using custom method2
+		for(int i=0;i<name.length();i++)
+		  {
+			  temp = name.charAt(i) + temp;
+		  } System.out.println(temp);
+		
 		//using built in methods
 		StringBuilder S = new StringBuilder(name);
 		System.out.println(S.reverse());//S.reverse();

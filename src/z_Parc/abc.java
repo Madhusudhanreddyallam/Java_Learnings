@@ -1,44 +1,37 @@
 package z_Parc;
 
 
-import java.util.*;
-import java.util.Map.Entry;
+//Java program for the above approach
+
+public class abc {
 
 
-public  class abc
-{
-
-	public static void mad()
+	public static void maximizeNumber(int N, int K)
 	{
 		
 	}
 
-	public static void mad2()
+
+	public static void main (String args[]) 
 	{
+		int N = 6673, K = 6;
+		String num = Integer.toString(N);
+		String result = "" ;
+		//maximizeNumber(N, K);
 		
+		for (int i=0 ; i<num.length();i++)
+		{
+			if(((int)num.charAt(i) - (int)'0')<K)
+			{
+				break;
+			}
+			else
+			{
+				result += num.charAt(i);
+			}
+		} System.out.println(result);
 	}
-
-	public static void mad3()
-	{
-	System.out.println("rem_madhu");		
-	}
-
-	public static void mad4()
-	{
-
-	System.out.println("working copy");
-	System.out.println("rem_madhu");		
-
-	}
-
-
-	public static void mad5()
-	{
-		System.out.println("rem_madhu");
-	}
-
 
 }
-
 
 

@@ -29,17 +29,8 @@ public class string_replace_noinbuilt {
 		  String s2 = "bad";
 		  String s3 = "xyz";
 		  
-		  String temp = "";
-		 for(char j : s1.toCharArray())
-		 {
-			 if(j=='b')
-			     break;
-			 else
-				 temp += j; 
-		 }
+		 s1=s1.replaceAll(s2, s3);
 		 
-		 temp = temp+s3;
-		 
-		 System.out.println(temp);
+		 System.out.println(s1);
 	  }
 }

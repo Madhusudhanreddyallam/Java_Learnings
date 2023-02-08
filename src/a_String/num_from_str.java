@@ -7,6 +7,7 @@ public class num_from_str {
 		m1();System.out.println();
 		m2();System.out.println();
 		m3();
+		m4();
 	}
 	
 	public static void m1()
@@ -43,4 +44,16 @@ public class num_from_str {
 			}System.out.print(st);
 		
 	}
+	
+	public static void m4 ()
+	  { 
+		  String str = "m123a$7655";
+		  for(char c : str.toCharArray())
+		  {
+			  if(Character.isLetterOrDigit(c))
+			  {
+				  System.out.print(c);
+			  }
+		  }
+	  }
 }

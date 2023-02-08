@@ -29,8 +29,6 @@ public class windowhandle {
 		String parentwin_id = driver.getWindowHandle();		
 		Set<String> all_win_id = driver.getWindowHandles();		
 		
-		SoftAssert soft = new SoftAssert();
-		soft.assertAll();
 		
 		for (String Child : all_win_id)
 		{
@@ -42,8 +40,6 @@ public class windowhandle {
 			
 		}
 		
-		Actions action = new Actions(driver);
-		action.build();
 		
 		
 	}
