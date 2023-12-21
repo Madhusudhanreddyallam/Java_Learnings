@@ -19,7 +19,8 @@ public class freq_sort {
 
 		for(int i=0 ; i<arr.length ; i++)
 		{
-			hm.put(arr[i], hm.getOrDefault(arr[i], 0)+1);
+			// Returns the value to which the specified key is mapped, or defaultValue 0 if this map contains no mapping for the key.
+			hm.put(arr[i], hm.getOrDefault(arr[i], 0)+1); 
 		}
 
 		LinkedList<Entry<Integer , Integer>> ll = new LinkedList<> (hm.entrySet());
