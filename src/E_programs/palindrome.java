@@ -26,21 +26,21 @@ public class palindrome {
         	System.out.println("Given number is NOT a palindrome " + val);
 	}
 	
-	public static void reversenum(int palcheck)
+	public static void reversenum(int num)
 	{
-		int num = palcheck , rev = 0 , rem =0;
+		int  rev = 0 , rem ; 
 		
 		while(num != 0)
 		{
-			rem = num % 10 ; 
-			rev = rev*10 + rem;
+			rem = num % 10 ;  
+			rev = rev*10 + rem; 
 			num = num/10;
 		} 
 
-        if(palcheck == rev)
-        	System.out.println("Given number is palindrome " + palcheck);
+        if(num == rev)
+        	System.out.println("Given number is palindrome " + num);
         else
-        	System.out.println("Given number is NOT a palindrome " + palcheck);
+        	System.out.println("Given number is NOT a palindrome " + num);
 		
 	}
 
