@@ -3,7 +3,7 @@ package D_String;
 public class compresion_amazon {
 
 	public static void main(String[] args) {
-		String str = "A"; // input
+		String str = "AB"; // input
 		String compressedString = compressString(str);
 		System.out.println(compressedString); // A3B5C1
 	}
