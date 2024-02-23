@@ -1,6 +1,6 @@
 package A_A_Sort;
 
-	public class SortArray {
+	public class SortArrayUsingBubbleSort {
 		public static void main(String[] args) {
 			
 			Integer[] array = {100 , 104, 107 , 103 ,105 , 102 ,106}; 
