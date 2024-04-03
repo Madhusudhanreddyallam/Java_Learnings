@@ -1,28 +1,35 @@
 package z_Parc;
 
-import java.util.*;
+
 
 public class Main {
-    public static void main(String[] args) {
-        // Sample HashMap
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(1, 5);
-        map.put(2, 3);
-        map.put(3, 7);
-        map.put(4, 2);
-        map.put(5, 5);
+	public static void main(String[] args) {
+		String word = "";
+		System.out.println(countRepChar(word));
+	}
 
-        // Threshold value
-        int threshold = 1;
+	public static String countRepChar(String word) {
+		if( word == null || word.isBlank() ) {
+	        throw new IllegalArgumentException("Provide a non-null and non-blank word");
+		}
 
-        // Count of keys where the value is greater than the threshold using streams
-        long count = map.entrySet()
-                .stream()
-                .filter(entry -> entry.getValue() > threshold)
-                .count();
-
-        System.out.println("Count of keys where the value is greater than " + threshold + ": " + count);
-    }
+		StringBuilder sb = new StringBuilder();
+		char prevChar = word.charAt(0);	
+		int count = 1;
+		for(int i=1 ; i< word.length() ; i++ ) {
+			char currentChar = word.charAt(i);
+			if(prevChar == currentChar) {
+				count++;
+			}
+			else {
+				sb.append(prevChar).append(count);
+				count=1;
+				prevChar = currentChar;
+			}
+		} 
+		sb.append(prevChar+""+count); 
+		return sb.toString();
+	}
 }
 
 

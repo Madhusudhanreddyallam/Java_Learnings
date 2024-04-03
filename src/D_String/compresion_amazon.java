@@ -3,35 +3,30 @@ package D_String;
 public class compresion_amazon {
 
 	public static void main(String[] args) {
-		String str = "AB"; // input
-		String compressedString = compressString(str);
-		System.out.println(compressedString); // A3B5C1
+		String word = "MMAAAADDDC";
+		System.out.println(countRepChar(word));
 	}
 
-	public static String compressString(String input) {
-		if (input == null || input.isEmpty() || input.length()==1) {
-			if(input.length()==1) {
-				return input+1;
-			}
-			return input;
+	public static String countRepChar(String word) {
+		if( word == null || word.isBlank() ) {
+	        throw new IllegalArgumentException("Provide a non-null and non-blank word");
 		}
 
-		StringBuilder compressed = new StringBuilder();
-		char currentChar = input.charAt(0);
+		StringBuilder sb = new StringBuilder();
+		char prevChar = word.charAt(0);	
 		int count = 1;
-
-		for(int i=1; i<input.length();i++) {
-			if(input.charAt(i) == currentChar) {
+		for(int i=1 ; i< word.length() ; i++ ) {
+			char currentChar = word.charAt(i);
+			if(prevChar == currentChar) {
 				count++;
-			}else {
-				compressed.append(currentChar+""+count);
-				currentChar = input.charAt(i);
-				count =1;
+			}
+			else {
+				sb.append(prevChar).append(count);
+				count=1;
+				prevChar = currentChar;
 			}
 		} 
-		compressed.append(currentChar+""+count);
-
-		return compressed.toString();
-
+		sb.append(prevChar).append(count); 
+		return sb.toString();
 	}
 }
